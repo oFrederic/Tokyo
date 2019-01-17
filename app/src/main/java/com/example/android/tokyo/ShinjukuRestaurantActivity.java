@@ -40,11 +40,9 @@ public class ShinjukuRestaurantActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+
                     case 0:
-                        String url = "http://www.kiyomura.co.jp/shops/detail/22";
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse(url));
-                        startActivity(i);
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kiyomura.co.jp/shops/detail/22")));
                     break;
                 }
             }
