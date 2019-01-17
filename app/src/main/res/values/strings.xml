@@ -67,4 +67,8 @@
     <string name="akihabara">Akihabara</string>
     <string name="tokyo_s_games_and_animes_atmospheres">Tokyo\'s games and animes atmospheres</string>
     <string name="shinjuku_kanji">新宿</string>
+    <string name="akihabara_kanji">秋葉原</string>
+    <string name="odaiba_kanji">お台場</string>
+    <string name="roppongi_kanji">六本木</string>
+    <string name="ueno_kanji">上野</string>
 </resources>

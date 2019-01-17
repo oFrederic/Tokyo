@@ -48,13 +48,13 @@ public class AreaFragmentPagerAdapter extends FragmentPagerAdapter {
         if (i == 0) {
             return mContext.getString(R.string.shinjuku_kanji);
         } else if (i == 1) {
-            return "秋葉原";
+            return mContext.getString(R.string.akihabara_kanji);
         } else if (i == 2) {
-            return "お台場";
+            return mContext.getString(R.string.odaiba_kanji);
         } else if (i == 3) {
-            return "六本木";
+            return mContext.getString(R.string.roppongi_kanji);
         } else {
-            return "上野";
+            return mContext.getString(R.string.ueno_kanji);
         }
     }
 }
