@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ShinjukuRestaurantActivity extends AppCompatActivity {
+public class ShinjukuShoppingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +19,12 @@ public class ShinjukuRestaurantActivity extends AppCompatActivity {
 
         ArrayList<Spot> spots = new ArrayList<>();
 
-        spots.add(new Spot(R.string.zanmai_name, R.string.zanmai_description,
-                R.drawable.zanmaisushi));
-        spots.add(new Spot(R.string.teppan_name, R.string.teppan_description,
-                R.drawable.teppanbaby));
-        spots.add(new Spot(R.string.kagurazaka_name, R.string.kagurazaka_description,
-                R.drawable.kagurazaka));
+        spots.add(new Spot(R.string.newomen_name, R.string.newomen_description,
+                R.drawable.newomen));
+        spots.add(new Spot(R.string.subnade_name, R.string.subnade_description,
+                R.drawable.subnade));
+        spots.add(new Spot(R.string.marui_name, R.string.marui_description,
+                R.drawable.marui));
 
         // Create an {@link SpotAdapter}, whose data source is a list of {@link Spot}s. The
         // adapter knows how to create list items for each item in the list.
@@ -46,13 +45,13 @@ public class ShinjukuRestaurantActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kiyomura.co.jp/shops/detail/22")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.newoman.jp/en/")));
                         break;
                     case 1:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.teppanbaby.com/shinjyuku/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://fun.subnade.co.jp/")));
                         break;
                     case 2:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://kagurazaka-ishikawa.co.jp/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.0101.co.jp/")));
                         break;
                 }
             }

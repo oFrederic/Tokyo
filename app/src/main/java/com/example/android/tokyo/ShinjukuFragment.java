@@ -39,7 +39,7 @@ public class ShinjukuFragment extends Fragment implements View.OnClickListener {
     }
 
     /**
-     *Override method from the View.onClickListener that setup an onClickListener for Multiple Buttons.
+     * Override method from the View.onClickListener that setup an onClickListener for Multiple Buttons.
      */
     @Override
     public void onClick(View v) {
@@ -50,16 +50,16 @@ public class ShinjukuFragment extends Fragment implements View.OnClickListener {
                 startActivity(shinjukuRestaurantIntent);
                 break;
             case R.id.shinjuku_shopping_textView:
-                Toast.makeText(getActivity(), "List of Shinjuku's shopping show up!",
-                        Toast.LENGTH_SHORT).show();
+                Intent shinjukuShoppingIntent = new Intent(getActivity(), ShinjukuShoppingActivity.class);
+                startActivity(shinjukuShoppingIntent);
                 break;
             case R.id.shinjuku_activity_textView:
-                Toast.makeText(getActivity(), "List of Shinjuku's activity show up!",
-                        Toast.LENGTH_SHORT).show();
+                Intent shinjukuThingsToDoIntent = new Intent(getActivity(), ShinjukuThingsToDoActivity.class);
+                startActivity(shinjukuThingsToDoIntent);
                 break;
             case R.id.shinjuku_hotel_textView:
-                Toast.makeText(getActivity(), "List of Shinjuku's hotel show up!",
-                        Toast.LENGTH_SHORT).show();
+                Intent shinjukuHotelIntent = new Intent(getActivity(), ShinjukuHotelActivity.class);
+                startActivity(shinjukuHotelIntent);
                 break;
 
         }

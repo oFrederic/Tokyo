@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">Tokyo Guide Tour</string>
     <string name="zanmai_name">Zanmai Sushi</string>
-    <string name="zanmai_description">Sushi Shop</string>
+    <string name="zanmai_description">sushi restaurant</string>
+    <string name="teppan_name">Teppan Babby</string>
+    <string name="teppan_description">okonomiyaki restaurant</string>
+    <string name="kagurazaka_name">Kagurazaka Ishikawa</string>
+    <string name="kagurazaka_description">traditional japanese restaurant</string>
+    <string name="newomen_name">NEWoMan</string>
+    <string name="newomen_description">shopping center</string>
+    <string name="subnade_name">Subnade</string>
+    <string name="subnade_description">shopping center</string>
+    <string name="marui_name">Marui Honkan</string>
+    <string name="marui_description">shopping center</string>
+    <string name="gyoen_name">Shinjuku Gyoen Park</string>
+    <string name="gyoen_description">large park with gardens</string>
+    <string name="cityhall_name">Tokyo Government Headquarters</string>
+    <string name="cityhall_description">city hall with observatories</string>
+    <string name="meijijingu_name">Meiji-jingū</string>
+    <string name="meijijingu_description">shinto temple</string>
+    <string name="granbell_name">Granbell Hotel</string>
+    <string name="granbell_description">hotel</string>
+    <string name="parkhyatt_name">Park Hyatt</string>
+    <string name="parkhyatt_description">hotel</string>
+    <string name="hilton_name">Hilton Shinjuku</string>
+    <string name="hilton_description">hotel</string>
 </resources>
