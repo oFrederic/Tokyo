@@ -1,5 +1,6 @@
 package com.example.android.tokyo;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,8 +11,12 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class AreaFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public AreaFragmentPagerAdapter(FragmentManager fm) {
+    /** Context of the app */
+    private Context mContext;
+
+    public AreaFragmentPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
     }
 
     @Override
@@ -41,7 +46,7 @@ public class AreaFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int i) {
         if (i == 0) {
-            return "新宿";
+            return mContext.getString(R.string.shinjuku_kanji);
         } else if (i == 1) {
             return "秋葉原";
         } else if (i == 2) {
