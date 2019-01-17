@@ -1,8 +1,13 @@
 package com.example.android.tokyo;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -30,5 +35,19 @@ public class ShinjukuRestaurantActivity extends AppCompatActivity {
         // Make the {@link ListView} use the {@link SpotAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Spot} in the list.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        String url = "http://www.kiyomura.co.jp/shops/detail/22";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                    break;
+                }
+            }
+        });
     }
 }
