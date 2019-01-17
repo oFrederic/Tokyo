@@ -44,19 +44,19 @@ public class OdaibaFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.odaiba_restaurant_textView:
-                Toast.makeText(getActivity(), "List of Odaiba's restaurant show up!",
+                Toast.makeText(getActivity(), getString(R.string.odaiba_restaurant_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.odaiba_shopping_textView:
-                Toast.makeText(getActivity(), "List of Odaiba's shopping show up!",
+                Toast.makeText(getActivity(), getString(R.string.odaiba_shopping_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.odaiba_activity_textView:
-                Toast.makeText(getActivity(), "List of Odaiba's activity show up!",
+                Toast.makeText(getActivity(), getString(R.string.odaiba_activity_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.odaiba_hotel_textView:
-                Toast.makeText(getActivity(), "List of Odaiba's hotel show up!",
+                Toast.makeText(getActivity(), getString(R.string.odaiba_hotel_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
 

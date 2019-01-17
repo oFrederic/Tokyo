@@ -46,13 +46,13 @@ public class ShinjukuRestaurantActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kiyomura.co.jp/shops/detail/22")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.kiyomura_website))));
                         break;
                     case 1:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.teppanbaby.com/shinjyuku/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.teppanbabby_website))));
                         break;
                     case 2:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://kagurazaka-ishikawa.co.jp/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.kagurazaka_website))));
                         break;
                 }
             }

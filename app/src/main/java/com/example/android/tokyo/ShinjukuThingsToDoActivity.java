@@ -45,13 +45,13 @@ public class ShinjukuThingsToDoActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.env.go.jp/garden/shinjukugyoen/index.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.gyoen_website))));
                         break;
                     case 1:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.metro.tokyo.jp/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cityhall_website))));
                         break;
                     case 2:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.meijijingu.or.jp/news/190115.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.meiji_website))));
                         break;
                 }
             }

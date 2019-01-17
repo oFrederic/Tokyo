@@ -45,13 +45,13 @@ public class ShinjukuShoppingActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.newoman.jp/en/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.newomen_website))));
                         break;
                     case 1:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://fun.subnade.co.jp/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.subnade_website))));
                         break;
                     case 2:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.0101.co.jp/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.marui_website))));
                         break;
                 }
             }

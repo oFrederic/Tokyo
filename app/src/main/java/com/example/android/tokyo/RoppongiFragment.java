@@ -44,19 +44,19 @@ public class RoppongiFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.roppongi_restaurant_textView:
-                Toast.makeText(getActivity(), "List of Roppongi's restaurant show up!",
+                Toast.makeText(getActivity(), getString(R.string.roppongi_restaurant_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.roppongi_shopping_textView:
-                Toast.makeText(getActivity(), "List of Roppongi's shopping show up!",
+                Toast.makeText(getActivity(), getString(R.string.roppongi_shopping_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.roppongi_activity_textView:
-                Toast.makeText(getActivity(), "List of Roppongi's activity show up!",
+                Toast.makeText(getActivity(), getString(R.string.roppongi_activity_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.roppongi_hotel_textView:
-                Toast.makeText(getActivity(), "List of Roppongi's hotel show up!",
+                Toast.makeText(getActivity(), getString(R.string.roppongi_hotel_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
 

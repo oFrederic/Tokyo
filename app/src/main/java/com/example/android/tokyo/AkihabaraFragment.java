@@ -44,19 +44,19 @@ public class AkihabaraFragment extends Fragment implements View.OnClickListener 
         switch (v.getId()) {
 
             case R.id.akihabara_restaurant_textView:
-                Toast.makeText(getActivity(), "List of Akihabara's restaurant show up!",
+                Toast.makeText(getActivity(), getString(R.string.akihabara_restaurant_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.akihabara_shopping_textView:
-                Toast.makeText(getActivity(), "List of Akihabara's shopping show up!",
+                Toast.makeText(getActivity(), getString(R.string.akihabara_shopping_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.akihabara_activity_textView:
-                Toast.makeText(getActivity(), "List of Akihabara's activity show up!",
+                Toast.makeText(getActivity(), getString(R.string.akihabara_activity_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.akihabara_hotel_textView:
-                Toast.makeText(getActivity(), "List of Akihabara's hotel show up!",
+                Toast.makeText(getActivity(), getString(R.string.akihabara_hotel_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
 

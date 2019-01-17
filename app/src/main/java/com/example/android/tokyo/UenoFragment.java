@@ -44,19 +44,19 @@ public class UenoFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.ueno_restaurant_textView:
-                Toast.makeText(getActivity(), "List of Ueno's restaurant show up!",
+                Toast.makeText(getActivity(), getString(R.string.ueno_restaurant_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ueno_shopping_textView:
-                Toast.makeText(getActivity(), "List of Ueno's shopping show up!",
+                Toast.makeText(getActivity(), getString(R.string.ueno_shopping_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ueno_activity_textView:
-                Toast.makeText(getActivity(), "List of Ueno's activity show up!",
+                Toast.makeText(getActivity(), getString(R.string.ueno_activity_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ueno_hotel_textView:
-                Toast.makeText(getActivity(), "List of Ueno's hotel show up!",
+                Toast.makeText(getActivity(), getString(R.string.ueno_hotel_toast),
                         Toast.LENGTH_SHORT).show();
                 break;
 

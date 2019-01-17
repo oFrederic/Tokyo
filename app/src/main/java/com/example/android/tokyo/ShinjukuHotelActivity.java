@@ -45,13 +45,13 @@ public class ShinjukuHotelActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.granbellhotel.jp/shinjuku/")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.grandbell_website))));
                         break;
                     case 1:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.hyatt.com/en-US/hotel/japan/park-hyatt-tokyo/tyoph#")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.hyatt_website))));
                         break;
                     case 2:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www3.hilton.com/en/hotels/japan/hilton-tokyo-TYOHITW/index.html?WT.mc_id=zELWAKN0APAC1HI2DMH3LocalSearch4DGGenericx6TYOHITW")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.hilton_website))));
                         break;
                 }
             }
